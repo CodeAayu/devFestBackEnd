@@ -8,12 +8,12 @@
 	<script>
 		const request = new XMLHttpRequest();
 		request.responseType = 'json';
-		request.open('GET','https://c3e31bae.ngrok.io/api/');
+		request.open('GET','https://c3e31bae.ngrok.io/api/'); //Write your own API endpoint//
 		request.send();
 		
 		request.onload = () => {
 			var res = request.response;
-			console.log(res);
+			//console.log(res);
 			var tab = "<table>";
 			tab += "<tr><td>Action:</td><td>Repository Name:</td><td>Repository URL:</td><td>Sender name:</td><td>Sender URL</td>";
 			for(var i=0;i<res.length;i++)
